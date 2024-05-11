@@ -15,7 +15,8 @@ Le Moniteur d'Activité PC est une application développée en C# avec .NET Core
 
 ## Installation :
 
-1. Téléchargez le setup d'installation depuis [ce lien](lien_de_telechargement).
+1. Téléchargez le setup d'installation depuis [ce lien](https://github.com/bahAli21/-PC-Activity-Monitor/raw/main/monitoring-pc-bah-mamadou.exe).
+
 2. Exécutez le setup en mode Administrateur.
 3. Suivez les instructions à l'écran pour terminer l'installation.
 
