@@ -36,7 +36,7 @@ Aucune configuration supplémentaire n'est requise. L'application récupère aut
 Les contributions sont les bienvenues ! Pour contribuer à ce projet, veuillez ouvrir une issue ou soumettre une pull request.
 
 
-![Capture d'ecran du logiciel](moniteur.png)
+![Capture d'ecran du logiciel](moniteur.png.gif)
 ## Problèmes Connus :
 
 - [ ] L'application peut rencontrer des problèmes de compatibilité avec certaines versions de Windows.
