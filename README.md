@@ -3,6 +3,13 @@
 🖥️ **Description** :
 Le Moniteur d'Activité PC est une application développée en C# avec .NET Core et WPF qui permet de surveiller en temps réel l'utilisation du CPU, la capacité de la RAM, l'espace libre/occupé des disques et les statistiques du réseau.
 
+
+
+![Capture d'ecran du logiciel](moniteur.png.gif)
+
+
+
+
 ## Fonctionnalités :
 
 🔄 **Surveillance CPU** : Affiche l'utilisation actuelle de la CPU avec un compteur en temps réel.
@@ -36,7 +43,7 @@ Aucune configuration supplémentaire n'est requise. L'application récupère aut
 Les contributions sont les bienvenues ! Pour contribuer à ce projet, veuillez ouvrir une issue ou soumettre une pull request.
 
 
-![Capture d'ecran du logiciel](moniteur.png.gif)
+
 ## Problèmes Connus :
 
 - [ ] L'application peut rencontrer des problèmes de compatibilité avec certaines versions de Windows.
