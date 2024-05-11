@@ -1,0 +1,1 @@
+Pour fonctionner, vous devez lancer Visual Stuio et le logiciel en mode Administrateur sinon ça ne marchera pas. On ne peut pas accéder aux infos hardware sans l'accès admin.

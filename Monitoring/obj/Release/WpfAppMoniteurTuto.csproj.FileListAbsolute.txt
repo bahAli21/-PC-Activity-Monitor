@@ -1,0 +1,15 @@
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\bin\Release\Moniteur Activiter.exe.config
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\bin\Release\Moniteur Activiter.exe
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\bin\Release\Moniteur Activiter.pdb
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\WpfAppMoniteurTuto.csproj.AssemblyReference.cache
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\MainWindow.g.cs
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\App.g.cs
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\Moniteur Activiter_MarkupCompile.cache
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\Moniteur Activiter_MarkupCompile.lref
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\MainWindow.baml
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\Moniteur Activiter.g.resources
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\WpfAppMoniteurTuto.Properties.Resources.resources
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\WpfAppMoniteurTuto.csproj.GenerateResource.cache
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\WpfAppMoniteurTuto.csproj.CoreCompileInputs.cache
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\Moniteur Activiter.exe
+D:\Visual-Studio-Project\Monitoring\WpfAppMoniteurTuto\obj\Release\Moniteur Activiter.pdb
