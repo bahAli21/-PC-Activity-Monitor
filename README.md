@@ -35,6 +35,8 @@ Aucune configuration supplémentaire n'est requise. L'application récupère aut
 
 Les contributions sont les bienvenues ! Pour contribuer à ce projet, veuillez ouvrir une issue ou soumettre une pull request.
 
+
+![Capture d'ecran du logiciel](moniteur.png)
 ## Problèmes Connus :
 
 - [ ] L'application peut rencontrer des problèmes de compatibilité avec certaines versions de Windows.
@@ -42,7 +44,7 @@ Les contributions sont les bienvenues ! Pour contribuer à ce projet, veuillez o
 
 ## Contact :
 
-Pour toute question ou problème, veuillez contacter [nom_utilisateur](lien_vers_profil_github).
+Pour toute question ou problème, veuillez me contacter [BAH Mamadou](https://bahali21.github.io/BAHMamadou/).
 
 ---
 
