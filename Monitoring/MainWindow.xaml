@@ -1,0 +1,81 @@
+﻿<Window x:Class="WpfAppMoniteurTuto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMoniteurTuto"
+        mc:Ignorable="d"
+        Title="Moniteur d'activité - BAH Mamadou" Height="580" Width="815" ResizeMode="CanMinimize" Icon="Compteur.png" WindowStartupLocation="CenterScreen" >
+    <Grid Background="#7FCFD8DD">
+        <Rectangle Fill="#FFE74C3C" HorizontalAlignment="Left" Height="32" Stroke="#FFCFD8DD" VerticalAlignment="Top" Width="809"/>
+        <Label Name="infoMsg" MouseDown="infoMsg_MouseDown" Content="View my portfolio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="809" Height="35" FontWeight="Bold" FontSize="20" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,-3,0,0"/>
+        <Label Content="Moniteur d'activité" Foreground="#FF37474F" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Height="50" Width="789" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="32"/>
+
+        <Rectangle Fill="#00E74C3C" HorizontalAlignment="Center" Height="90" Margin="0,89,0,0" Stroke="#FFCFD8DD" VerticalAlignment="Top" Width="789"/>
+
+        <Rectangle Fill="#00E74C3C" HorizontalAlignment="Left" Height="294" Margin="5,198,545,0" Stroke="#FFCFD8DD" VerticalAlignment="Top" Width="244"/>
+        <Rectangle Fill="#00E74C3C" HorizontalAlignment="Center" Height="294" Margin="275,198,275,0" Stroke="#FFCFD8DD" VerticalAlignment="Top" Width="245"/>
+        <Rectangle Fill="#00E74C3C" HorizontalAlignment="Right" Height="294" Margin="545,198,5,0" Stroke="#FFCFD8DD" VerticalAlignment="Top" Width="246"/>
+
+        <Label Content="Informations système :" Foreground="#FF37474F" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Height="44" Width="426" FontWeight="Bold" FontSize="25"/>
+        <Label Name="osName" Content="OS" Foreground="#FF37474F" HorizontalAlignment="Left" Margin="10,125,0,0" VerticalAlignment="Top" Height="30" Width="399" FontSize="15"/>
+        <Label Name="osArch" Content="OS" Foreground="#FF37474F" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" Height="30" Width="399" FontSize="15"/>
+        <Label Name="procName" Content="PROC" Foreground="#FF37474F" HorizontalAlignment="Left" Margin="327,125,0,0" VerticalAlignment="Top" Height="30" Width="472" FontSize="15"/>
+        <Label Name="gpuName" Content="GPU" Foreground="#FF37474F" HorizontalAlignment="Left" Margin="327,147,0,0" VerticalAlignment="Top" Height="30" Width="472" FontSize="15"/>
+
+        <!-- Module CPU -->
+        <Image HorizontalAlignment="Left" Height="235" Margin="10,204,0,0" VerticalAlignment="Top" Width="235" Source="Compteur.png"/>
+        <Image Name="imgAiguille" HorizontalAlignment="Left" Height="70" Margin="74,270,0,0" VerticalAlignment="Top" Width="70" Source="Aiguille.png" RenderTransformOrigin="0.738,0.733">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Label Content="CPU" Foreground="#FFCFD8DD" HorizontalAlignment="Left" Margin="58,364,0,0" VerticalAlignment="Top" Height="50" Width="138" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="32"/>
+        <Label Name="cpu" Content="0,00%" HorizontalAlignment="Left" Margin="5,433,0,0" VerticalAlignment="Top" FontSize="30" Foreground="#FF37474F" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="243" FontWeight="Bold"/>
+
+        <!-- Module RAM + Temp -->
+        <Label Content="RAM" HorizontalAlignment="Left" Margin="283,198,0,0" VerticalAlignment="Top" Foreground="#FF37474F" FontWeight="Bold" FontSize="30"/>
+        <Label Content="Utilisation de la mémoire :" HorizontalAlignment="Left" Margin="285,238,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.789,-0.115" Width="220" Foreground="#FF37474F" FontSize="14"/>
+        <ProgressBar Name="barRam" HorizontalAlignment="Left" Height="25" Margin="291,267,0,0" VerticalAlignment="Top" Width="223" Background="#FFCFD8DD" BorderBrush="#FF78909C" Foreground="#FF37474F" Value="50"/>
+
+        <Label x:Name="ramTotal" Content="Total : 15,90 GB" HorizontalAlignment="Left" Margin="287,299,0,0" VerticalAlignment="Top" Foreground="#FF37474F" FontSize="14"/>
+        <Label x:Name="ramUsed" Content="Utilisé : 10,00 GB" HorizontalAlignment="Left" Margin="287,329,0,0" VerticalAlignment="Top" Foreground="#FF37474F" FontSize="14"/>
+        <Label x:Name="ramFree" Content="Libre : 5,90 GB" HorizontalAlignment="Left" Margin="287,359,0,0" VerticalAlignment="Top" Foreground="#FF37474F" FontSize="14"/>
+
+        <Label Content="TEMPÉRATURE" HorizontalAlignment="Left" Margin="288,388,0,0" VerticalAlignment="Top" Foreground="#FF37474F" FontWeight="Bold" FontSize="30" Width="239"/>
+        <Label Name="temp" Content="85°C" HorizontalAlignment="Left" Margin="283,431,0,0" VerticalAlignment="Top" Foreground="#FF37474F" FontWeight="Bold" FontSize="40" Width="244" HorizontalContentAlignment="Center" Height="59"/>
+
+        <!-- Disques -->
+        <Label Content="DISQUES" HorizontalAlignment="Left" Margin="558,198,0,0" VerticalAlignment="Top" Foreground="#FF37474F" FontWeight="Bold" FontSize="30"/>
+        <ListBox Name="listeDisques" HorizontalAlignment="Right" Height="81" Margin="555,250,12,0" VerticalAlignment="Top" Width="230"/>
+
+        <Label Content="RÉSEAU" HorizontalAlignment="Left" Margin="558,337,0,0" VerticalAlignment="Top" Foreground="#FF37474F" FontWeight="Bold" FontSize="30"/>
+        <Label Content="Données transférées :" HorizontalAlignment="Left" Margin="562,378,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.789,-0.115" Width="220" Foreground="#FF37474F" FontSize="14"/>
+
+        <Label Name="netMont" Content="0" HorizontalAlignment="Left" Margin="567,402,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF37474F" Width="174" HorizontalContentAlignment="Right"/>
+        <Label Name="netDes" Content="0" HorizontalAlignment="Left" Margin="567,442,0,0" VerticalAlignment="Top" FontSize="24" Foreground="#FF37474F" Width="174" HorizontalContentAlignment="Right"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="762,409,0,0" VerticalAlignment="Top" Width="35" Source="arrow.png"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="762,450,0,0" VerticalAlignment="Top" Width="35" Source="arrow.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <!-- Footer -->
+        <Rectangle Fill="#FF37474F" HorizontalAlignment="Center" Height="46" Stroke="#FFCFD8DD" VerticalAlignment="Top" Width="815" Margin="0,518,0,0"/>
+        <Label Content="Copyright © BAH Mamdou" HorizontalAlignment="Left" Margin="0,509,0,0" VerticalAlignment="Center" Height="36" Width="809" Foreground="#FFCFD8DD" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="13"/>
+
+
+    </Grid>
+</Window>
